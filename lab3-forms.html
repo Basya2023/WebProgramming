@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coffee Order Form</title>
+    <style>
+        h1 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 2px solid #ee00ff;
+  border-radius: 1em;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+label span {
+  display: inline-block;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  border: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(0, 0, 0);
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+fieldset {
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+}
+
+button {
+  margin-top: 20px;
+}
+
+label {
+  display: inline-block;
+  
+}
+
+p label {
+  width: 100%;
+  
+}
+
+    </style>
+  </head>
+  <body>
+    <p>Personalize Your Coffee Order</p>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" />
+  </p>
+  <p>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_email" />
+  </p>
+  <p>
+  <label for="coffee">Choose Coffee Type:</label>
+  <select name="coffee type" id="coffee">
+      <option value="latte">Latte</option>
+      <option value="cappuccino">Cappuccino</option>
+      <option value="americano">Americano</option>
+      <option value="espresso">Espresso</option>
+    </select>
+  </p>
+    <p>Choose your the size of your treat for today!</p>
+  <input type="radio" id="small" name="coffee size" value="small">
+  <label for="small">Small</label><br>
+  <input type="radio" id="med" name="coffee size" value="med">
+  <label for="med">Medium</label><br>
+  <input type="radio" id="large" name="coffee size" value="large">
+  <label for="large">Large</label>
+<p>
+    <label for="extras">Extras:</label>
+    
+    <input type="checkbox" id="extras" name="whipped cream" value="whipped cream">
+    <label for="whipped cream">Whipped Cream</label>
+    
+    <input type="checkbox" id="extras" name="Extra Shot" value="Extra Shot">
+    <label for="Extra Shot">Extra Shot</label>
+    
+    <input type="checkbox" id="extras" name="almond milk" value="almond milk">
+    <label for="almond milk">Almond Milk</label>
+</p>
+<label for="comments">Additional Comments:</label>
+<p>
+<textarea id="comments" name="user_comments" rows="5" cols="50" placeholder="Is there anything else we can help you with?"></textarea>
+ </p>  
+<section>
+  <p>
+    <button type="submit">Place Order</button>
+  </p>
+</section>
+</form>
+  </body>
+</html>
